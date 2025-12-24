@@ -4,7 +4,7 @@ from django.db import models
 class Student(models.Model):
     full_name = models.CharField(max_length=100)
     email = models.EmailField(max_length=100)
-    phone = models.CharField(20)
+    phone = models.CharField()
     about = models.TextField()
     updated_at = models.DateTimeField(auto_now=True)
 
